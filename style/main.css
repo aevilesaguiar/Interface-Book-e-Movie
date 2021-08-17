@@ -1,0 +1,163 @@
+:root{
+    --amarelo:yellow;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--amarelo);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+    
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+
+}
+
+
+header nav a:hover{
+    color:var(--amarelo);
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/anne.jpg');
+
+    height:500px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:var(--amarelo);
+    border-radius: 5px;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:var(--amarelo);
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+
+ img {
+    opacity: 0.5;
+  }
+  
+  img:hover {
+    opacity: 1.0;
+  }
+
+  /*Series*/
+.serie-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(27, 26, 26, 0.5),rgba(0,0,0,.50)100%) ;
+
+    height:500px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo-2{
+   margin-left: 40px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.container-video{
+  
+    max-width: 100%;
+    height: auto;
+/*flex box*/
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+
+
+}
+.item-video{
+
+    margin: 40px;
+        max-width: 100%;
+    height: auto;
+
+}
+
+.footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellow;
+    color:var(--preta);
+    text-align: center;
+ }
